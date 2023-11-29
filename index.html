@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <!-- main  -->
+    <main>
+      <!-- container  -->
+      <div class="container">
+        <!-- hero section  -->
+        <section class="hero">
+          <h1 class="hero__heading--1">PING.</h1>
+          <h1 class="hero__heading--2">We are launching <span>soon!</span></h1>
+          <p class="hero__text">Subscribe and get notified</p>
+
+          <!-- email section  -->
+          <form novalidate class="hero__form">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address..."
+            />
+            <input type="submit" value="Notify Me" class="hero__form__button" />
+          </form>
+        </section>
+
+        <!-- image section -->
+        <section class="image">
+          <img
+            src="./images/illustration-dashboard.png"
+            alt="illustration dashboard"
+          />
+        </section>
+      </div>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer__social-icons">
+        <a href="#"><img src="./icons/facebook-f.svg" alt="facebook" /></a>
+        <a href="#"><img src="./icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./icons/instagram.svg" alt="instagram" /></a>
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
