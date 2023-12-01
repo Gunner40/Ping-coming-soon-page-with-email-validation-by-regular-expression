@@ -5,8 +5,11 @@ const email = document.getElementById("email");
 form.addEventListener("submit", handleSubmit);
 
 // listen for user input in email field and clear previous errors if any
-email.addEventListener("keydown", () => {
+email.addEventListener("keydown", (e) => {
   clearError();
+
+  // prevent form from submitting
+  e.preventDefault();
 });
 
 // handle the form submit including checking for valid email etc
@@ -32,8 +35,10 @@ function handleSubmit(e) {
         "hsl(354, 100%, 66%)"
       );
     }
-    e.preventDefault();
   }
+
+  // prevent form from submitting
+  e.preventDefault();
 }
 
 // create p element and display the error message to the user
